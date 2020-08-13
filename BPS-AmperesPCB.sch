@@ -941,4 +941,26 @@ Wire Wire Line
 	5100 2350 5100 2500
 Wire Wire Line
 	5100 1500 5100 1600
+$Comp
+L utsvt-misc:Logo_Placeholder LOGO1
+U 1 1 5F35267C
+P 8000 5550
+F 0 "LOGO1" H 8000 5700 50  0001 C CNN
+F 1 "Dr Hallock" H 8140 5550 50  0000 L CNN
+F 2 "UTSVT_Special:Hallock_Image_Tiny" H 8000 5625 50  0001 C CNN
+F 3 "" H 8000 5625 50  0001 C CNN
+	1    8000 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L utsvt-misc:Logo_Placeholder LOGO2
+U 1 1 5F353D5F
+P 8000 6000
+F 0 "LOGO2" H 8000 6150 50  0001 C CNN
+F 1 "UTSVT Logo" H 8140 6000 50  0000 L CNN
+F 2 "UTSVT_Special:UTSVT_Logo_Symbol" H 8000 6075 50  0001 C CNN
+F 3 "" H 8000 6075 50  0001 C CNN
+	1    8000 6000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
