@@ -82,12 +82,6 @@ $EndComp
 Wire Wire Line
 	7950 1950 7550 1950
 Wire Wire Line
-	7950 2050 7550 2050
-Wire Wire Line
-	7950 2150 7550 2150
-Wire Wire Line
-	7950 2250 7550 2250
-Wire Wire Line
 	7950 2350 7550 2350
 Wire Wire Line
 	7950 2450 7850 2450
@@ -132,16 +126,7 @@ Wire Wire Line
 Wire Wire Line
 	10050 2050 10150 2050
 Wire Wire Line
-	9050 2150 9150 2150
-Wire Wire Line
-	9050 2250 9150 2250
-Wire Wire Line
-	9150 2250 9150 2150
-Wire Wire Line
 	9050 2350 9150 2350
-Wire Wire Line
-	9150 2350 9150 2250
-Connection ~ 9150 2250
 Wire Wire Line
 	9050 2450 9450 2450
 Wire Wire Line
@@ -213,7 +198,6 @@ F 3 "~" H 9600 2850 50  0001 C CNN
 	1    9600 2850
 	1    0    0    -1  
 $EndComp
-Connection ~ 9150 2150
 Text Label 9450 2450 2    50   ~ 0
 IP
 Text Label 9450 2550 2    50   ~ 0
@@ -416,8 +400,6 @@ F 11 "https://www.mouser.co.uk/ProductDetail/ams/AS8510-ASSM?qs=zVqNetb%252BkcRK
 $EndComp
 Wire Wire Line
 	9800 2200 9800 2150
-Wire Wire Line
-	9150 2150 9800 2150
 Wire Wire Line
 	3850 5100 3900 5100
 Wire Wire Line
@@ -963,4 +945,73 @@ F 3 "" H 8000 6075 50  0001 C CNN
 	1    8000 6000
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	9050 2150 9800 2150
+Wire Wire Line
+	9150 2250 9050 2250
+$Comp
+L power:GND #PWR0102
+U 1 1 60A15C7B
+P 9150 2350
+F 0 "#PWR0102" H 9150 2100 50  0001 C CNN
+F 1 "GND" V 9155 2222 50  0000 R CNN
+F 2 "" H 9150 2350 50  0001 C CNN
+F 3 "" H 9150 2350 50  0001 C CNN
+	1    9150 2350
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+3.3V #PWR0101
+U 1 1 60A29BE4
+P 9150 2250
+F 0 "#PWR0101" H 9150 2100 50  0001 C CNN
+F 1 "+3.3V" V 9165 2378 50  0000 L CNN
+F 2 "" H 9150 2250 50  0001 C CNN
+F 3 "" H 9150 2250 50  0001 C CNN
+	1    9150 2250
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J3
+U 1 1 60A34776
+P 7725 1025
+F 0 "J3" V 7689 737 50  0000 R CNN
+F 1 "Conn_01x04" V 7598 737 50  0000 R CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 7725 1025 50  0001 C CNN
+F 3 "~" H 7725 1025 50  0001 C CNN
+	1    7725 1025
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 60A357E8
+P 7625 1225
+F 0 "#PWR0103" H 7625 975 50  0001 C CNN
+F 1 "GND" H 7630 1052 50  0000 C CNN
+F 2 "" H 7625 1225 50  0001 C CNN
+F 3 "" H 7625 1225 50  0001 C CNN
+	1    7625 1225
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 2250 7725 2250
+Wire Wire Line
+	7550 2150 7825 2150
+Wire Wire Line
+	7550 2050 7925 2050
+Wire Wire Line
+	7725 1225 7725 2250
+Connection ~ 7725 2250
+Wire Wire Line
+	7725 2250 7950 2250
+Wire Wire Line
+	7825 1225 7825 2150
+Connection ~ 7825 2150
+Wire Wire Line
+	7825 2150 7950 2150
+Wire Wire Line
+	7925 1225 7925 2050
+Connection ~ 7925 2050
+Wire Wire Line
+	7925 2050 7950 2050
 $EndSCHEMATC
